@@ -1,0 +1,24 @@
+{
+  "name": "NodeSQL-Store",
+  "version": "1.0.0",
+  "description": "Amazon-like CLI App, powered with Node and MySQL",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j0hnruss0/NodeSQL-Store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j0hnruss0/NodeSQL-Store/issues"
+  },
+  "homepage": "https://github.com/j0hnruss0/NodeSQL-Store#readme",
+  "dependencies": {
+    "inquirer": "^6.5.0",
+    "mysql": "^2.17.1"
+  }
+}
