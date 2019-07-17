@@ -28,7 +28,7 @@ function startStore() {
     connection.query(query, function(err, response) {
         if (err) throw err;
         for (var i = 0; i < response.length; i++) {
-            console.log(response[i].item_id + " || " + response[i].product_name + " || price: " + response[i].price);
+            console.log(response[i].item_id + " || " + response[i].product_name + " || price: " + response[i].price.toFixed(2));
         }
         
         inquirer.prompt([
@@ -87,7 +87,7 @@ function updateTable(purchased_item, purchased_num, bought, price) {
         function(err, res) {
             if (err) throw err;
             console.log("You bought " + bought + " unit(s) of " + purchased_item);
-            console.log("Your amount due is $" + (bought * price) + "\n");
+            console.log("Your amount due is $" + (bought * price).toFixed(2) + "\n");
             connection.end();
         }
     )  

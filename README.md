@@ -10,8 +10,17 @@ When you start up the app by entering "node bamzonCustomer", you see a list of i
 
 You will need your own mySQLWorkbench with a root password and server port to use the app yourself
 
-To Be Added: Functionality that allows users to restock the database 
+ADDED: Updating database functionality:
+
+Run "node bamazonManager" in the terminal to see a list of options:
+
+* "View Products for Sale": Similar to what original app could do but with some more data returned including item IDs and the stock of each item
+* "View Low Inventory": See which items are low in supply (less than 5 units)
+* "Add to Inventory": Update the stock of any item shown
+* "Add New Product": Add new items to the list. You can set everything from name of product, it's department, price, and initial quantity in stock
 
 ### Demo for Bamazon CLI App
 
-![](bamazon-demo.gif)
+![Demo1](bamazon-demo.gif)
+
+![Demo2](Node-SQL-Store-Demo.gif)
